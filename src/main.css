@@ -7,11 +7,19 @@
   font-weight: 400;
 }
 
-.App {
+.AppWrapper {
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.App {
+  min-width: 400px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  background-color: rgb(35, 35, 35);
 }

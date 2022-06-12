@@ -1,7 +1,5 @@
 .player_container {
-	width: 50%;
-	padding: 1rem;
-	border: 1px solid #8d8d8d;
+	width: 100%;
 	border-radius: 10px;
 	color: #dadada;
 	display: flex;
@@ -9,6 +7,9 @@
 	align-items: center;
 	justify-content: space-between;
 	background-color: black;
+	position:absolute;
+	bottom: 0;
+	left: 0;
 }
 
 .player_container > * {
@@ -21,7 +22,7 @@
 }
 
 .player_container .navigation {
-	width: 100%;
+	width: 90%;
 }
 
 .player_container .navigation .navigation_wrapper {

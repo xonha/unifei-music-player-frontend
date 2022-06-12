@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import './player.css';
 import {
 	BsFillPlayCircleFill,
@@ -7,15 +7,21 @@ import {
 	BsFillSkipEndCircleFill,
 } from 'react-icons/bs';
 
-export const Player = ({
-	songs,
-	audioElement,
-	isPlaying,
-	setIsPlaying,
-	currentSong,
-	setCurrentSong,
-}) => {
+export const Player = (props) => {
+	const {
+		songs,
+		audioElement,
+		isPlaying,
+		setIsPlaying,
+		currentSong,
+		setCurrentSong,
+	} = props;
+
 	const clickRef = useRef();
+
+	useEffect(() => {
+		isPlaying ? audioElement.current.play() : audioElement.current.pause();
+	}, [currentSong.title, audioElement, isPlaying]);
 
 	function PlayPause() {
 		setIsPlaying(!isPlaying);
@@ -30,16 +36,34 @@ export const Player = ({
 
 	function skipBack() {
 		const index = songs.findIndex((x) => x.title === currentSong.title);
-		if (index === 0) setCurrentSong(songs[songs.length - 1]);
-		else setCurrentSong(songs[index - 1]);
-		audioElement.current.currentTime = 0;
+		if (index === 0)
+			setCurrentSong({
+				...songs[songs.length - 1],
+				progress: 0,
+				length: audioElement.current.duration,
+			});
+		else
+			setCurrentSong({
+				...songs[index - 1],
+				progress: 0,
+				length: audioElement.current.duration,
+			});
 	}
 
 	function skiptoNext() {
 		const index = songs.findIndex((x) => x.title === currentSong.title);
-		if (index === songs.length - 1) setCurrentSong(songs[0]);
-		else setCurrentSong(songs[index + 1]);
-		audioElement.current.currentTime = 0;
+		if (index === songs.length - 1)
+			setCurrentSong({
+				...songs[0],
+				progress: 0,
+				length: audioElement.current.duration,
+			});
+		else
+			setCurrentSong({
+				...songs[index + 1],
+				progress: 0,
+				length: audioElement.current.duration,
+			});
 	}
 
 	return (
