@@ -1,7 +1,7 @@
 # Player de Música
 
 Trabalho 212 - Gerência de Projeto de Software.  
-Implementa um player de música em react.
+Implementação de um player de música em react.
 
 ## Grupo
 2018003703 - Henrique Castro Oliveira  
