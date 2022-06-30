@@ -13,15 +13,15 @@ export const Player = (props) => {
 		audioElement,
 		isPlaying,
 		setIsPlaying,
-		currentSong,
-		setCurrentSong,
+		currentSongIndex,
+		setCurrentSongIndex,
 	} = props;
 
 	const clickRef = useRef();
 
 	useEffect(() => {
 		isPlaying ? audioElement.current.play() : audioElement.current.pause();
-	}, [currentSong.title, audioElement, isPlaying]);
+	}, [currentSongIndex, audioElement, isPlaying]);
 
 	function PlayPause() {
 		setIsPlaying(!isPlaying);
@@ -32,51 +32,29 @@ export const Player = (props) => {
 		const offset = e.nativeEvent.offsetX;
 		const progressBar = (offset / width) * 100;
 		audioElement.current.currentTime =
-			(progressBar / 100) * currentSong.duration;
+			(progressBar / 100) * songs[currentSongIndex].duration;
 	}
 
 	function skipBack() {
-		const index = songs.findIndex((x) => x.title === currentSong.title);
-		if (index === 0)
-			setCurrentSong({
-				...songs[songs.duration - 1],
-				progress: 0,
-				duration: audioElement.current.duration,
-			});
-		else
-			setCurrentSong({
-				...songs[index - 1],
-				progress: 0,
-				duration: audioElement.current.duration,
-			});
+		if (currentSongIndex === 0) setCurrentSongIndex(songs.length - 1);
+		else setCurrentSongIndex(currentSongIndex - 1);
 	}
 
 	function skiptoNext() {
-		const index = songs.findIndex((x) => x.title === currentSong.title);
-		if (index === songs.duration - 1)
-			setCurrentSong({
-				...songs[0],
-				progress: 0,
-				duration: audioElement.current.duration,
-			});
-		else
-			setCurrentSong({
-				...songs[index + 1],
-				progress: 0,
-				duration: audioElement.current.duration,
-			});
+		if (currentSongIndex === songs.length - 1) setCurrentSongIndex(0);
+		else setCurrentSongIndex(currentSongIndex + 1);
 	}
 
 	return (
 		<div className='player_container'>
 			<div className='title'>
-				<p>{currentSong.title}</p>
+				<p>{songs[currentSongIndex].title}</p>
 			</div>
 			<div className='navigation'>
 				<div className='navigation_wrapper' onClick={checkWidth} ref={clickRef}>
 					<div
 						className='seek_bar'
-						style={{ width: `${currentSong.progress + '%'}` }}
+						style={{ width: `${songs[currentSongIndex].progress + '%'}` }}
 					></div>
 				</div>
 			</div>

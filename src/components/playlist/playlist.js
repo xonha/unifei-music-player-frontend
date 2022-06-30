@@ -1,16 +1,12 @@
 import './playlist.css';
 
 export function Playlist(props) {
-	const { songs, currentSongIndex, setCurrentSong, audioElement } = props;
+	const { songs, currentSongIndex, setCurrentSongIndex } = props;
 
 	function handleSongClick(index) {
 		return () => {
 			if (index === currentSongIndex) return;
-			setCurrentSong({
-				...songs[index],
-				progress: 0,
-				length: audioElement.current.duration,
-			});
+			setCurrentSongIndex(index);
 		};
 	}
 

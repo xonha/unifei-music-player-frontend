@@ -6,7 +6,7 @@ import { useRef, useState, useEffect } from 'react';
 export function App() {
 	const [songs, setSongs] = useState();
 	const [isPlaying, setIsPlaying] = useState(false);
-	const [currentSong, setCurrentSong] = useState();
+	const [currentSongIndex, setCurrentSongIndex] = useState(0);
 
 	const audioElement = useRef();
 
@@ -14,10 +14,27 @@ export function App() {
 		fetchSongs();
 	}, []);
 
+	// keeps the state of the player (playing/paused)
 	useEffect(() => {
 		if (!audioElement.current) return;
 		isPlaying ? audioElement.current.play() : audioElement.current.pause();
 	}, [isPlaying]);
+
+	// resets current song progress
+	useEffect(() => {
+		setSongs((currentSongs) => {
+			if (!currentSongs) return;
+			return currentSongs.map((song, index) => {
+				if (index === currentSongIndex) {
+					return {
+						...song,
+						progress: 0,
+					};
+				}
+				return song;
+			});
+		});
+	}, [currentSongIndex, setSongs]);
 
 	async function fetchSongs() {
 		const res = await fetch('http://0.0.0.0:8000/song');
@@ -29,25 +46,24 @@ export function App() {
 		}));
 
 		setSongs(formattedSongs);
-		setCurrentSong(formattedSongs[0]);
-	}
-
-	function getCurrentSongIndex() {
-		if (!songs || !currentSong) return;
-		return songs.findIndex((song) => song.title === currentSong.title);
 	}
 
 	function onPlaying() {
-		setCurrentSong({
-			...currentSong,
-			progress:
-				(audioElement.current.currentTime / audioElement.current.duration) *
-				100,
-			duration: audioElement.current.duration,
+		const newSongs = songs.map((song, index) => {
+			if (index === currentSongIndex) {
+				return {
+					...song,
+					progress:
+						(audioElement.current.currentTime / audioElement.current.duration) *
+						100,
+				};
+			}
+			return song;
 		});
+		setSongs(newSongs);
 	}
 
-	if (!songs || !currentSong) {
+	if (!songs) {
 		return <div>Loading...</div>;
 	}
 
@@ -56,12 +72,11 @@ export function App() {
 			<div className='App'>
 				<Playlist
 					songs={songs}
-					currentSongIndex={getCurrentSongIndex()}
-					setCurrentSong={setCurrentSong}
-					audioElement={audioElement}
+					currentSongIndex={currentSongIndex}
+					setCurrentSongIndex={setCurrentSongIndex}
 				/>
 				<audio
-					src={currentSong.public_url}
+					src={songs[currentSongIndex].public_url}
 					ref={audioElement}
 					onTimeUpdate={onPlaying}
 				/>
@@ -71,8 +86,8 @@ export function App() {
 					isPlaying={isPlaying}
 					setIsPlaying={setIsPlaying}
 					audioElement={audioElement}
-					currentSong={currentSong}
-					setCurrentSong={setCurrentSong}
+					currentSongIndex={currentSongIndex}
+					setCurrentSongIndex={setCurrentSongIndex}
 				/>
 			</div>
 		</div>
