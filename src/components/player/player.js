@@ -31,38 +31,39 @@ export const Player = (props) => {
 		let width = clickRef.current.clientWidth;
 		const offset = e.nativeEvent.offsetX;
 		const progressBar = (offset / width) * 100;
-		audioElement.current.currentTime = (progressBar / 100) * currentSong.length;
+		audioElement.current.currentTime =
+			(progressBar / 100) * currentSong.duration;
 	}
 
 	function skipBack() {
 		const index = songs.findIndex((x) => x.title === currentSong.title);
 		if (index === 0)
 			setCurrentSong({
-				...songs[songs.length - 1],
+				...songs[songs.duration - 1],
 				progress: 0,
-				length: audioElement.current.duration,
+				duration: audioElement.current.duration,
 			});
 		else
 			setCurrentSong({
 				...songs[index - 1],
 				progress: 0,
-				length: audioElement.current.duration,
+				duration: audioElement.current.duration,
 			});
 	}
 
 	function skiptoNext() {
 		const index = songs.findIndex((x) => x.title === currentSong.title);
-		if (index === songs.length - 1)
+		if (index === songs.duration - 1)
 			setCurrentSong({
 				...songs[0],
 				progress: 0,
-				length: audioElement.current.duration,
+				duration: audioElement.current.duration,
 			});
 		else
 			setCurrentSong({
 				...songs[index + 1],
 				progress: 0,
-				length: audioElement.current.duration,
+				duration: audioElement.current.duration,
 			});
 	}
 
