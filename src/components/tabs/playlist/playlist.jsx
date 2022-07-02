@@ -1,4 +1,4 @@
-import './playlist.css';
+import styles from './playlist.module.css';
 
 export function Playlist(props) {
 	const { songs, currentSongIndex, setCurrentSongIndex } = props;
@@ -11,11 +11,11 @@ export function Playlist(props) {
 	}
 
 	return (
-		<div className='playlistContainer'>
-			<ul className='playListList'>
+		<div className={styles.playlistContainer}>
+			<ul className={styles.playListList}>
 				{songs.map((song, index) => (
 					<li
-						className='playlistItem'
+						className={styles.playlistItem}
 						key={song.title}
 						style={{
 							backgroundColor:

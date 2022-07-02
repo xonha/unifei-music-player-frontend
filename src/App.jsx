@@ -1,12 +1,16 @@
 import './main.css';
 import { Player } from './components/player/player';
-import { Playlist } from './components/playlist/playlist';
 import { useRef, useState, useEffect } from 'react';
+import { Tabs } from './components/tabs';
+import { Footer } from './components/footer/footer';
+
+const INITIAL_TAB = 'playlist';
 
 export function App() {
 	const [songs, setSongs] = useState();
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [currentSongIndex, setCurrentSongIndex] = useState(0);
+	const [selectedTab, setSelectedTab] = useState(INITIAL_TAB);
 
 	const audioElement = useRef();
 
@@ -48,21 +52,6 @@ export function App() {
 		setSongs(formattedSongs);
 	}
 
-	function onPlaying() {
-		const newSongs = songs.map((song, index) => {
-			if (index === currentSongIndex) {
-				return {
-					...song,
-					progress:
-						(audioElement.current.currentTime / audioElement.current.duration) *
-						100,
-				};
-			}
-			return song;
-		});
-		setSongs(newSongs);
-	}
-
 	if (!songs) {
 		return <div>Loading...</div>;
 	}
@@ -70,25 +59,25 @@ export function App() {
 	return (
 		<div className='AppWrapper'>
 			<div className='App'>
-				<Playlist
+				<Tabs
 					songs={songs}
 					currentSongIndex={currentSongIndex}
 					setCurrentSongIndex={setCurrentSongIndex}
+					selectedTab={selectedTab}
 				/>
-				<audio
-					src={songs[currentSongIndex].public_url}
-					ref={audioElement}
-					onTimeUpdate={onPlaying}
-				/>
-				<Player
-					songs={songs}
-					setSongs={setSongs}
-					isPlaying={isPlaying}
-					setIsPlaying={setIsPlaying}
-					audioElement={audioElement}
-					currentSongIndex={currentSongIndex}
-					setCurrentSongIndex={setCurrentSongIndex}
-				/>
+
+				<div className='Layout'>
+					<Player
+						songs={songs}
+						setSongs={setSongs}
+						isPlaying={isPlaying}
+						setIsPlaying={setIsPlaying}
+						audioElement={audioElement}
+						currentSongIndex={currentSongIndex}
+						setCurrentSongIndex={setCurrentSongIndex}
+					/>
+					<Footer setSelectedTab={setSelectedTab} />
+				</div>
 			</div>
 		</div>
 	);

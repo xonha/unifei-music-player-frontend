@@ -18,8 +18,14 @@
   min-width: 400px;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: rgb(35, 35, 35);
+}
+
+.Layout {
+  background-color: black;
+  position: relative;
+  display: flex;
+  height: 265px;
 }

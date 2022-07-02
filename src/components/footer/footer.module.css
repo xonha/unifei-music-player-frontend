@@ -1,0 +1,22 @@
+.footerContainer {
+	position: absolute;
+	bottom: 0px;
+	color: white;
+	display: flex;
+  flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 50px;
+}
+
+.footerItem {
+	border: 1px solid black;
+}
+
+.footerItem {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 19.4%;
+	cursor: pointer;
+}
