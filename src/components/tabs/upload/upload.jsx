@@ -17,11 +17,10 @@ export function UploadComponent() {
   }
 
   async function postSongs() {
-    // TODO: post songs to server
     const fetchArray = files.map((file) => {
       const formData = new FormData();
       formData.append("file", file);
-      return fetch("/api/songs", {
+      return fetch("http://localhost:8000/song", {
         method: "POST",
         body: formData,
       });
