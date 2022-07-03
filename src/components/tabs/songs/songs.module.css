@@ -1,18 +1,21 @@
-.playlistContainer {
+.songsContainer {
   height: calc(100% - 186px);
   width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-.playListList{
+.songsList {
   list-style: none;
 }
 
-.playlistItem {
+.songsItem {
   color: #cacaca;
-  width: 100%;
+  max-width: 100%;
   padding: 0.7rem 1.5rem;
   border-bottom: 1px solid #cacaca;
   cursor: pointer;
+  white-space: nowrap;
+  overflow-x: clip;
+  text-overflow: ellipsis;
 }
