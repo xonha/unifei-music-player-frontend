@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -12,14 +12,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #101010;
 }
 
 .App {
-  min-width: 400px;
+  width: 400px;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: rgb(35, 35, 35);
+}
+
+.Layout {
+  background-color: black;
+  position: relative;
+  display: flex;
+  height: 265px;
 }

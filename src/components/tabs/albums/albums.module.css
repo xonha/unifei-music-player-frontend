@@ -1,0 +1,21 @@
+.albumsContainer {
+  height: calc(100% - 186px);
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.albumsList {
+  list-style: none;
+}
+
+.albumsItem {
+  color: #cacaca;
+  max-width: 100%;
+  padding: 0.7rem 1.5rem;
+  border-bottom: 1px solid #cacaca;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow-x: clip;
+  text-overflow: ellipsis;
+}
