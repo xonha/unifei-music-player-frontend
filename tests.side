@@ -1,0 +1,715 @@
+{
+  "id": "0329564e-9827-41e0-8b7f-eaf2d326ff88",
+  "version": "2.0",
+  "name": "music_player",
+  "url": "http://localhost:3000/",
+  "tests": [{
+    "id": "cad7bb84-5fc9-4e45-86b3-772a9e2a816c",
+    "name": "botoes de controle",
+    "commands": [{
+      "id": "a1397aa6-1147-4b1a-972e-3194faf37cdd",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc9ce144-9e44-48ed-937f-e3ac5c461c09",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1309x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59f01a5e-b907-4f98-b05a-e91d718321cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.songs_songsItem__CHdei:nth-child(4)",
+      "targets": [
+        ["css=.songs_songsItem__CHdei:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/ul/li[4]", "xpath:idRelative"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Eclipse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30f5fadd-02a2-4351-8c0b-90040b3fc63b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_pp__25mP4 > path",
+      "targets": [
+        ["css=.player_pp__25mP4 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "80e165af-a135-4bae-b55f-30e53189fe90",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_btn_action__a8BpI:nth-child(3) > path",
+      "targets": [
+        ["css=.player_btn_action__a8BpI:nth-child(3) > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "077f67d7-328d-4c61-8281-fc199021862d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_btn_action__a8BpI:nth-child(1)",
+      "targets": [
+        ["css=.player_btn_action__a8BpI:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e45e2299-0dc4-4a23-98e1-32256bc17035",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_btn_action__a8BpI:nth-child(1) > path",
+      "targets": [
+        ["css=.player_btn_action__a8BpI:nth-child(1) > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf169f02-5964-423d-9222-b7695738989b",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.player_navigation_wrapper__f8eUA",
+      "targets": [
+        ["css=.player_navigation_wrapper__f8eUA", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "115,0.33807373046875"
+    }, {
+      "id": "dec4057b-df16-49e0-874e-95dd2cdf799c",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.player_navigation_wrapper__f8eUA",
+      "targets": [
+        ["css=.player_navigation_wrapper__f8eUA", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "115,0.33807373046875"
+    }, {
+      "id": "684c02bf-a2b8-4b12-ac3c-4b2d7971c81a",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.player_navigation_wrapper__f8eUA",
+      "targets": [
+        ["css=.player_navigation_wrapper__f8eUA", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "115,0.33807373046875"
+    }, {
+      "id": "6a125229-7f5b-462f-b226-47c354aaccdc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_navigation_wrapper__f8eUA",
+      "targets": [
+        ["css=.player_navigation_wrapper__f8eUA", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e757f17-8d12-49af-9c29-c28239458c59",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_navigation_wrapper__f8eUA",
+      "targets": [
+        ["css=.player_navigation_wrapper__f8eUA", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a27b46f-4a1b-41bf-8c11-0d39b5a52055",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_pp__25mP4",
+      "targets": [
+        ["css=.player_pp__25mP4", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "93b2a90d-4755-4149-a0c1-2a440200e358",
+    "name": "trocar de abas",
+    "commands": [{
+      "id": "03d42ebf-5a24-4c7c-82ed-d8351b8ab433",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f75c0c5-5a8f-4d3c-ad0c-a3d5631af55e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1309x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de9d9da0-1cf7-4c1d-a385-6a57db9a0b82",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer_footerItem__O2kZg:nth-child(5) > img",
+      "targets": [
+        ["css=.footer_footerItem__O2kZg:nth-child(5) > img", "css:finder"],
+        ["xpath=//img[@title='playlists']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[5]/img", "xpath:idRelative"],
+        ["xpath=//div[5]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "650fae1a-3e37-4aff-ace4-cf98530400c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer_footerItem__O2kZg:nth-child(4) > img",
+      "targets": [
+        ["css=.footer_footerItem__O2kZg:nth-child(4) > img", "css:finder"],
+        ["xpath=//img[@title='artists']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[4]/img", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a86212d9-a70d-4cf4-8de7-59645475c214",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer_footerItem__O2kZg:nth-child(3) > img",
+      "targets": [
+        ["css=.footer_footerItem__O2kZg:nth-child(3) > img", "css:finder"],
+        ["xpath=//img[@title='upload']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[3]/img", "xpath:idRelative"],
+        ["xpath=//div[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac517c67-d9c4-4151-8314-498f304f7839",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer_footerItem__O2kZg:nth-child(2) > img",
+      "targets": [
+        ["css=.footer_footerItem__O2kZg:nth-child(2) > img", "css:finder"],
+        ["xpath=//img[@title='albums']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b6675ee-aeb4-4553-98c6-343acd72b438",
+      "comment": "",
+      "command": "click",
+      "target": "css=.albums_albumsItem__m0qv0:nth-child(2)",
+      "targets": [
+        ["css=.albums_albumsItem__m0qv0:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Hotel Diablo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b437a2e-01a8-4e7f-b206-dae5d86cc077",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_returnButton__2WGgd",
+      "targets": [
+        ["css=.header_returnButton__2WGgd", "css:finder"],
+        ["xpath=//img[@alt='back']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be72fd62-1c09-45ab-a892-23fa6d04d7f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer_footerItem__O2kZg:nth-child(1) > img",
+      "targets": [
+        ["css=.footer_footerItem__O2kZg:nth-child(1) > img", "css:finder"],
+        ["xpath=//img[@title='songs']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dc1fcf05-82a9-456f-b038-999ccd6ae9aa",
+    "name": "abrir playlist, artistas e albuns",
+    "commands": [{
+      "id": "f47933eb-3178-4303-8033-44cec2b66636",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ab5993c-f54e-4414-962d-505500d8464b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1309x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a648e62-0681-4bc3-a232-64645d80bfec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer_footerItem__O2kZg:nth-child(5)",
+      "targets": [
+        ["css=.footer_footerItem__O2kZg:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[5]", "xpath:idRelative"],
+        ["xpath=//div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9acf0791-0aa4-4882-bae2-1da85ecbdb15",
+      "comment": "",
+      "command": "click",
+      "target": "css=.playlists_playlistsItem__5vuIP",
+      "targets": [
+        ["css=.playlists_playlistsItem__5vuIP", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Teste')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc3b493a-eb9d-4a07-b3e8-d99f0920068c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_returnButton__2WGgd",
+      "targets": [
+        ["css=.header_returnButton__2WGgd", "css:finder"],
+        ["xpath=//img[@alt='back']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e9199d7-5e42-4644-9014-82e52929877a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer_footerItem__O2kZg:nth-child(4) > img",
+      "targets": [
+        ["css=.footer_footerItem__O2kZg:nth-child(4) > img", "css:finder"],
+        ["xpath=//img[@title='artists']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[4]/img", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "404daca5-0e53-483f-a555-d8aaa5b5e11c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.artists_artistsItem__m7oHo:nth-child(2)",
+      "targets": [
+        ["css=.artists_artistsItem__m7oHo:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Pink Floyd')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae238276-3ef1-402a-9a90-dcd28e2d4b36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_returnButton__2WGgd",
+      "targets": [
+        ["css=.header_returnButton__2WGgd", "css:finder"],
+        ["xpath=//img[@alt='back']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87b1ed15-90ce-45a0-b8a1-e9c7ad704c55",
+      "comment": "",
+      "command": "click",
+      "target": "css=.artists_artistsItem__m7oHo:nth-child(3)",
+      "targets": [
+        ["css=.artists_artistsItem__m7oHo:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Machine Gun Kelly')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c571a90-40b4-4783-bb39-1617816c5dcc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_returnButton__2WGgd",
+      "targets": [
+        ["css=.header_returnButton__2WGgd", "css:finder"],
+        ["xpath=//img[@alt='back']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ae082fb-eb11-4e94-90e0-95aff17ea1ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer_footerItem__O2kZg:nth-child(2) > img",
+      "targets": [
+        ["css=.footer_footerItem__O2kZg:nth-child(2) > img", "css:finder"],
+        ["xpath=//img[@title='albums']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0b04da7-6946-42ce-b0ee-d338e4281441",
+      "comment": "",
+      "command": "click",
+      "target": "css=.albums_albumsItem__m0qv0:nth-child(1)",
+      "targets": [
+        ["css=.albums_albumsItem__m0qv0:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'The Dark Side Of The Moon [1983, Toshiba-EMI, CP35-3017]')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e9bac04-bd6d-4977-9827-eb49c91b7b2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_returnButton__2WGgd",
+      "targets": [
+        ["css=.header_returnButton__2WGgd", "css:finder"],
+        ["xpath=//img[@alt='back']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1791dd8f-a2f1-4bde-bc3f-8b6cf09cbd3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.albums_albumsItem__m0qv0:nth-child(2)",
+      "targets": [
+        ["css=.albums_albumsItem__m0qv0:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Hotel Diablo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b066a120-23d2-43c6-8dfe-75d35c8459b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_returnButton__2WGgd",
+      "targets": [
+        ["css=.header_returnButton__2WGgd", "css:finder"],
+        ["xpath=//img[@alt='back']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fe3392b2-0256-48a3-b87e-ad1fc0ff5435",
+    "name": "tocar musica de playlist",
+    "commands": [{
+      "id": "5338d017-8a4a-482c-bd96-915e2c37e66d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50998aa7-8144-4134-9c79-7da209c6d29e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1309x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56faf5bc-6bb9-4222-9d74-6cb7c31f1eb2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer_footerItem__O2kZg:nth-child(5) > img",
+      "targets": [
+        ["css=.footer_footerItem__O2kZg:nth-child(5) > img", "css:finder"],
+        ["xpath=//img[@title='playlists']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[5]/img", "xpath:idRelative"],
+        ["xpath=//div[5]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "102028e6-5afa-4ee5-84b9-a014ca39ffc3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.playlists_playlistsItem__5vuIP",
+      "targets": [
+        ["css=.playlists_playlistsItem__5vuIP", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Teste')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61485474-743f-430b-adf2-5d320929642d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.playlists_playlistsItem__5vuIP",
+      "targets": [
+        ["css=.playlists_playlistsItem__5vuIP", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "868a0b83-2f7a-480b-b8a4-2da971dfe11c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_pp__25mP4 > path",
+      "targets": [
+        ["css=.player_pp__25mP4 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "194623cb-2db0-4a8b-b811-eaa9bd48e592",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.player_navigation_wrapper__f8eUA",
+      "targets": [
+        ["css=.player_navigation_wrapper__f8eUA", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "130,0.33807373046875"
+    }, {
+      "id": "c1dedae5-28e4-4aca-8afd-8be13042ee9f",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.player_navigation_wrapper__f8eUA",
+      "targets": [
+        ["css=.player_navigation_wrapper__f8eUA", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "130,0.33807373046875"
+    }, {
+      "id": "3f677646-2812-4c82-9df4-3cd85e15abc7",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.player_navigation_wrapper__f8eUA",
+      "targets": [
+        ["css=.player_navigation_wrapper__f8eUA", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "130,0.33807373046875"
+    }, {
+      "id": "d7ba3a04-663f-4cd7-b785-aa0df81cdc91",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_navigation_wrapper__f8eUA",
+      "targets": [
+        ["css=.player_navigation_wrapper__f8eUA", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6930dd91-bddc-4c28-a456-26bce9fc7c78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_navigation_wrapper__f8eUA",
+      "targets": [
+        ["css=.player_navigation_wrapper__f8eUA", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef2786cf-88fd-4ab5-b589-fbea09e16b19",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_pp__25mP4",
+      "targets": [
+        ["css=.player_pp__25mP4", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "afa785b0-b1cb-4436-9182-12cd89bc76d2",
+    "name": "trocar musica de album",
+    "commands": [{
+      "id": "3f08cc86-f577-433b-a07b-f2746e04cd02",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0feedcf2-2d0b-41f9-a3e3-093c5715216e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1309x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "034c8356-9399-4acb-b79d-313df02e6c9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer_footerItem__O2kZg:nth-child(2) > img",
+      "targets": [
+        ["css=.footer_footerItem__O2kZg:nth-child(2) > img", "css:finder"],
+        ["xpath=//img[@title='albums']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7739b891-499f-40a1-bbfb-269b431a1201",
+      "comment": "",
+      "command": "click",
+      "target": "css=.albums_albumsItem__m0qv0:nth-child(2)",
+      "targets": [
+        ["css=.albums_albumsItem__m0qv0:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/ul/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Hotel Diablo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d7fe94e-4485-4863-90a7-f05183656b5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.albums_albumsItem__m0qv0",
+      "targets": [
+        ["css=.albums_albumsItem__m0qv0", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Sex Drive (feat. Cara Delevingne)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a2ff52d-f1f6-43ef-b19a-80caad5c3c7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_pp__25mP4",
+      "targets": [
+        ["css=.player_pp__25mP4", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "547584b6-59e3-4d0a-ba42-248b2587de20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_pp__25mP4 > path",
+      "targets": [
+        ["css=.player_pp__25mP4 > path", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ba04a2b4-3a4a-4c40-90ba-d4faad33fc45",
+    "name": "tocar musica de artista",
+    "commands": [{
+      "id": "0cd9ab6f-9688-43cb-adc6-3e47d56b96f9",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:3000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99ae7cfd-cc40-42a4-a177-db926ac0520c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1309x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b50a792-af94-483b-bc58-fc639426804c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.footer_footerItem__O2kZg:nth-child(4) > img",
+      "targets": [
+        ["css=.footer_footerItem__O2kZg:nth-child(4) > img", "css:finder"],
+        ["xpath=//img[@title='artists']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div[2]/div[4]/img", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e91137a5-33d7-451e-aa64-be82463746b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.artists_artistsItem__m7oHo:nth-child(1)",
+      "targets": [
+        ["css=.artists_artistsItem__m7oHo:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'qwe')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "189c43ae-9fce-4729-9010-149b630877cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.artists_artistsItem__m7oHo",
+      "targets": [
+        ["css=.artists_artistsItem__m7oHo", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/ul/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23e39f36-e7cc-484f-806f-38a224732ffc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_pp__25mP4",
+      "targets": [
+        ["css=.player_pp__25mP4", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b217a4da-9bb9-4174-b5c2-6aec6e31cbbc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_navigation__4JxnV",
+      "targets": [
+        ["css=.player_navigation__4JxnV", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03740574-b061-4b95-baa2-733c1ffe4812",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_navigation_wrapper__f8eUA",
+      "targets": [
+        ["css=.player_navigation_wrapper__f8eUA", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[3]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f2ec826-390d-4fbd-9a6d-2fc1df301819",
+      "comment": "",
+      "command": "click",
+      "target": "css=.player_pp__25mP4",
+      "targets": [
+        ["css=.player_pp__25mP4", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f3053952-39bd-4743-b83e-8e43098fe638",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
